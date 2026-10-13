@@ -1,7 +1,8 @@
 # streamlit_app.py
+import os
 import streamlit as st, requests, time
 
-API = "http://localhost:8000"
+API = os.environ.get("API_URL", "http://localhost:8000").rstrip("/")
 
 st.title("Upload dashboard")
 uploaded = st.file_uploader("Choose a file")
