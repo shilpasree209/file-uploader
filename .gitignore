@@ -1,0 +1,5 @@
+my-redis/
+__pycache__/
+*.py[cod]
+.env
+uploads/
