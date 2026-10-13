@@ -2,7 +2,7 @@
 import io, mimetypes, os
 import streamlit as st, requests, pandas as pd
 
-API = os.environ.get("API_URL", "http://localhost:8000").rstrip("/")
+API = os.environ.get("API_URL", "https://file-uploader-ycgq.onrender.com").rstrip("/")
 TEXT_LIMIT = 200_000  # bytes of text to render inline
 
 st.page_link("streamlit_app.py", label="⬅ Back to dashboard")

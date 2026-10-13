@@ -2,7 +2,7 @@
 import os
 import streamlit as st, requests, time
 
-API = os.environ.get("API_URL", "http://localhost:8000").rstrip("/")
+API = os.environ.get("API_URL", "https://file-uploader-ycgq.onrender.com").rstrip("/")
 
 st.title("Upload dashboard")
 uploaded = st.file_uploader("Choose a file")
